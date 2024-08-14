@@ -1,0 +1,43 @@
+{
+  "homepage": "http://sirsimions.github.io/Phase-2-Hooks-Code-Challenge-Bot-Battlr",
+  "name": "react-hooks-bot-battlr-code-challenge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "json-server": "^0.15.1"
+  },
+  "scripts": {
+    "start": "PORT=8000 react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "server": "json-server --watch db.json -p 8002"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
