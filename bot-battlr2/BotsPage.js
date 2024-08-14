@@ -7,13 +7,13 @@ const BotsPage = () => {
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
-    fetch("https://json-server-vercel-ashy-nine.vercel.app/bots")
+    fetch("https://restful-api-vercel-nxitrr11h-mercys-projects-ca0cd536.vercel.app/bots")
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []);
 
   const deleteBot = (botId) => {
-    fetch(`https://json-server-vercel-ashy-nine.vercel.app/bots/${botId}`, {
+    fetch(`https://restful-api-vercel-nxitrr11h-mercys-projects-ca0cd536.vercel.app/bots${botId}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     }).then(() => {
